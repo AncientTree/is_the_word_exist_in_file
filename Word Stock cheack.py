@@ -1,4 +1,4 @@
-print('''本工具可自行输入路径，如E盘根目录的文件“E:\\additional_chars.dat”''')
+print('''本工具可自行输入路径，如E盘根目录的文件“E:\\\\additional_chars.dat”''')
 print('请输入文件路径：')
 file_path = input()
 while True:
