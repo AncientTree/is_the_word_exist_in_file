@@ -32,7 +32,7 @@ while True:
 
 def clean_others(lack_word):  #用来清除输出的字符串里面常见的分汉字字符
     temp = []
-    strings = list("1234567890qwertyuiopasdfghjklzx～cvbnm,./;·'×\[]<>?:{}|=-_+!@「」QWERTYUIOPASDFGHJKLZXCVBNM#$%^&*()~！@#￥%……&*（）—+、？《， 。》；：‘’“”｛｝【】")
+    strings = list("1234567890qwer―tyuiopas％①②③④／－　dfghjklzx～cvbnm,./;·'×\[]<>?:{}|=-_+!@「」QWERTYUIOPASDFGHJKLZXCVBNM#$%^&*()~！@#￥%……&*（）—+、？《， 。》；：‘’“”｛｝【】")
     for i in lack_word:
         if not i in strings:
             temp.append(i)
@@ -92,5 +92,5 @@ while True:
                 print("字库里面还没有：")
                 print('%s' %lack_word_str)
                 clean_lack_word(lack_word)      #清空list，否则下一句话也会输出上一句话不存在于字库的字
-            else :
-                print('这几个字都已经有了啦~')
+        else :
+            print('你说的字都已经有了呀，再试试别的？')
